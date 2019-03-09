@@ -1,6 +1,6 @@
 # Assignment 3
 ## Recipe with RecyclerView 
-**RecipeManager** This assignment is based on the 4.5 homework assignment. You will use RecyclerView to present a list of recipe names and descriptions. Clicking on the recipe will start a new Activity or Fragment that shows the detailed recipe.      
+**RecipeManager** This assignment is based on the 4.5 homework assignment. You will use RecyclerView to present a list of recipe names and descriptions. Clicking on the recipe will start a new Activity or Fragment that shows the detailed recipe with a name and image at the top of the screen, and below that the ingrediants and directions in a scrollVieww.     
     
 
 ![](./images/wireframe.png) 
