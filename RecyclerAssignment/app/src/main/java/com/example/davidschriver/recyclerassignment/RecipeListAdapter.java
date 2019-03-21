@@ -1,5 +1,8 @@
 package com.example.davidschriver.recyclerassignment;
-
+/*
+ * @Date : 2019-03-20
+ * @author : David Schriver
+ */
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +20,7 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
 
     private final LinkedList<Recipe> mRecipeList;
     private LayoutInflater mInflater;
+    private MainActivity myParent;//*maniacal laughter*
 
     class RecipeViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
@@ -29,11 +33,15 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
             name = itemView.findViewById(R.id.name);
             description = itemView.findViewById(R.id.description);
             myAdapter = adapter;
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-            //Do stuff here
+            int myPosition = getLayoutPosition();
+            Recipe datRecipe = mRecipeList.get(myPosition);
+
+            myParent.seeRecipe(datRecipe);
         }
     }
 
@@ -44,6 +52,10 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
     }
 
 
+    public void setParent (MainActivity to)
+    {
+        this.myParent = to;
+    }
 
     @NonNull
     @Override

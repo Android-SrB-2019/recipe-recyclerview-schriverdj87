@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecyclerAssignment</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="directions">Directions</string>
 </resources>
