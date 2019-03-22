@@ -27,6 +27,7 @@
         android:id="@+id/food_img"
         android:layout_width="match_parent"
         android:layout_height="153dp"
+        android:adjustViewBounds="true"
 
         app:srcCompat="@drawable/foodplaceholder" />
 

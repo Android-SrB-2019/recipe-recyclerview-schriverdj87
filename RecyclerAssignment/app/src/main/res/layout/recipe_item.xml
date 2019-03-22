@@ -5,6 +5,13 @@
 * @author : David Schriver
  */
 -->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin = "4dp"
+    >
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -26,8 +33,9 @@
         android:id = "@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize = "12sp"
+        android:textSize = "20sp"
         android:textColor="#888"
         />
 
 </LinearLayout>
+</android.support.v7.widget.CardView>
